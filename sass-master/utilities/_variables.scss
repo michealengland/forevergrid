@@ -1,0 +1,128 @@
+// Color Variables
+$color-1: #020041;  // Darkest Purple
+$color-2: #170387;  // Purple 2
+$color-3: #6626C9;  // Purple 3
+$color-4: #964AE2;  // Purple 4
+$color-5: #C074F1;  // Purple 5
+$color-6: #E2A1F9;  // Purple 6
+$color-7: #F6CCFE;  // Purple 7
+$color-8: #FEEDFE;  // lightest Purple
+$color-9: #FF1EE5;  // Bright Pink
+$color-10: #74EDF1; // Teal
+
+// Constant Colors
+$white: #ffffff;
+$white-1: darken($white, 2%);
+
+$black: #000000;
+$dark-gray-1: #333333;  // Dark Gray
+$light-gray-1: #f5f5f5; // Light Gray
+
+$link-color-1: #0066cc;
+$link-color-2: #0099cc;
+$link-color-3: #ff9900;
+$link-color-4: #8e2ed2;
+
+//Font Styles
+$font-family-1: 'Muli', sans-serif;
+$icon-font: FontAwesome;
+
+$light: 300;
+$regular: 400;
+$italic: italic;
+$thick: 600;
+$bold: 800;
+
+
+// Core Site Coloring
+$site_bg: $white;
+$site_header_bg: $color-1;
+$site_color: $color-1;
+
+// Secondary
+$secondary_bg: $white;
+
+// Footer
+$site_footer_bg: $color-1;         // Outer Container
+$site_widget_area_bg: $color-1;    // widget_area
+$site_footer_credits_bg: $color-1; // Footer Credits @footer-info.php
+$site_footer_color: $white;        // Footer Color
+
+
+$footer_widget_title: $white;      // Wiget Title Color
+$footer_widget_color: $white;      // Wiget Title Color
+
+$page_title_color: $color-4;       // Page Title Color
+
+// link Color Settings
+$light-link: $white;
+$light-link-hover: darken($white, 5%);
+$light-link-focus: darken($white, 5%);
+$light-link-active: darken($white, 5%);
+$light-link-visited: darken($white, 5%);
+
+// link Color Settings
+$dark-link: $color-1;
+$dark-link-hover: $color-2;
+$dark-link-focus: $color-2;
+$dark-link-active: $color-3;
+
+// Max Widths
+$mw-1: 800px;
+$mw-2: 80%;
+$mw-3: 90;
+
+// Light Icons
+$light-icon: $white;
+$light-icon-hover: $color-9;
+$light-icon-focus: darken($white, 5%);
+$light-icon-active: darken($white, 5%);
+
+// Dark Icons
+$dark-icon: $color-1;
+$dark-icon-hover: $color-2;
+$dark-icon-focus: $color-2;
+$dark-icon-active: $color-3;
+
+// Main Nav Link Colors
+$main-nav-link: $light-link;
+$main-nav-link-hover: $light-icon-hover;
+$main-nav-link-focus: $light-link-focus;
+$main-nav-link-active: $light-link-active;
+
+// Sub Navigation Links
+$sub-nav-bg: $white;
+$sub-nav-link-bg: $color-3;
+$sub-nav-link: $dark-link;
+$sub-nav-link-hover: $dark-link-hover;
+$sub-nav-link-focus: $dark-link-focus;
+$sub-nav-link-active: $dark-link-active;
+
+// Module Gap Generic Spacing
+$mod-gap-0: 1em;
+$mod-gap-1: 1.2em;
+$mod-gap-2: 2em;
+$mod-gap-3: 3em;
+
+// Global Spacing for Layouts
+$global-spacing-1:   1rem;
+$global-spacing-2: 1.5rem;
+$global-spacing-3: 4rem;
+$global-spacing-4: 10rem;
+
+$pad-int-1: .25em;
+$pad-int-2: 1em;
+$pad-int-3: 3em;
+$pad-int-4: 4em;
+
+$mod-padding-1: 1em;
+$mod-padding-2: 3em 2em;
+$mod-padding-3: 3em 3em;
+
+$mod-title-1: 1.8em;
+$mod-title-2: 3.2em;
+$mod-title-3: 3.8em;
+
+
+// Heading Height & Offset
+$fixed-header-height-1: 80px;

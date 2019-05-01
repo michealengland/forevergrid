@@ -1,0 +1,97 @@
+@keyframes left-aligned-card {
+	from {
+			left: -50%;
+			transform: rotate(-45deg);
+	}
+	to {
+			left: 0;
+			transform: rotate(0deg);
+	}
+}
+
+@keyframes right-aligned-card {
+	from {
+			right: -50%;
+			transform: rotate(45deg);
+	}
+	to {
+			right: 0;
+			transform: rotate(0deg);
+	}
+}
+
+@keyframes card-fade-in {
+	from {
+	opacity: 0;
+	}
+	to {
+	opacity: 1;
+	}
+}
+
+@keyframes dot-transform {
+	from {
+	transform: scale(1.5,1.5);
+	}
+	to {
+	transform: scale(1,1);
+	}
+}
+
+@keyframes spin {
+0% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	//opacity: 0;
+}
+100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+}
+
+@keyframes nav-item-scroll {
+from {
+color: transparent;
+}
+to {
+color: $white;
+}
+}
+
+
+	.animatable {
+		visibility: hidden;
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+	}
+
+	.animated .blocks-gallery-item {
+		visibility: visible;
+		animation-fill-mode: both;
+		animation-play-state: running;
+		animation-name: card-fade-in;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-direction: alternate;
+		transition: 0.55s ease;
+	}
+
+
+	.animated {
+
+		.wp-block-hms-innerblocks {
+		animation-duration: .6s;
+		animation-iteration-count: 1;
+		animation-direction: alternate;
+		}
+
+		&.has-left-content .wp-block-hms-innerblocks {
+		animation-name: left-aligned-card;
+		}
+
+		&.has-right-content .wp-block-hms-innerblocks {
+		animation-name: right-aligned-card;
+		}
+
+	}
