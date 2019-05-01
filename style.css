@@ -1,104 +1,14 @@
 /*
-Theme Name: Forever Grid Child
+Theme Name: Forever Grid
 Theme URI: http://forevergrid.com
 Author: Mike England
-Author URI: http://forevergrid.com/mikeengland
-Template: forevergrid
+Author URI: http://forevergrid.com
 Version 0.0.1
 Description: Forever Grid is an accessibility first theme that is created specifically for the Gutenberg editor.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: forevergrid
 Tags:
 */
-@keyframes left-aligned-card {
-  from {
-    left: -50%;
-    transform: rotate(-45deg);
-  }
-  to {
-    left: 0;
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes right-aligned-card {
-  from {
-    right: -50%;
-    transform: rotate(45deg);
-  }
-  to {
-    right: 0;
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes card-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes dot-transform {
-  from {
-    transform: scale(1.5, 1.5);
-  }
-  to {
-    transform: scale(1, 1);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes nav-item-scroll {
-  from {
-    color: transparent;
-  }
-  to {
-    color: #ffffff;
-  }
-}
-
-.animatable {
-  visibility: hidden;
-  animation-play-state: paused;
-}
-
-.animated .blocks-gallery-item {
-  visibility: visible;
-  animation-fill-mode: both;
-  animation-play-state: running;
-  animation-name: card-fade-in;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  transition: 0.55s ease;
-}
-
-.animated .wp-block-hms-innerblocks {
-  animation-duration: .6s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-
-.animated.has-left-content .wp-block-hms-innerblocks {
-  animation-name: left-aligned-card;
-}
-
-.animated.has-right-content .wp-block-hms-innerblocks {
-  animation-name: right-aligned-card;
-}
-
 .site-header .main-menu #toggle {
   background-color: #6626C9;
 }
