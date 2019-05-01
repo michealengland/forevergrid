@@ -1,0 +1,95 @@
+html {
+	padding:0;
+	margin: 0;
+}
+
+body {
+	color: $site_color;
+	font-family: 'Muli', sans-serif;
+	font-size: 18px;
+}
+
+h1 {
+	color: $color-2;
+	font-size: 2.4em;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+h2 {
+	color: $color-2;
+	font-size: 1.8em;
+	font-weight: $light;
+	padding-bottom: $pad-int-1;
+}
+
+h3 {
+	color: $color-2;
+	font-size: 1.6em;
+	padding-bottom: $pad-int-1;
+}
+
+h4 {
+	font-size: 1.4em;
+	padding-bottom: $pad-int-1;
+}
+
+h5 {
+	font-size: 1.2em;
+	padding-bottom: $pad-int-1;
+}
+
+h6  {
+	font-size: 1.2em;
+	padding-bottom: $pad-int-1;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.6em;
+	margin: 0 0 .5em 0;
+	padding: 0 0 1.2em 0;
+}
+
+ul, ol {
+	line-height: 1.8em;
+	list-style: inside;
+}
+
+
+@media ( min-width: 1em ) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+}
+
+@media ( min-width: 48em ) {
+	h1 {
+	font-size: 3.6em;
+	}
+
+	h2 {
+	font-size: 3.2em;
+	}
+}
+
+@media ( min-width: 60em ) {
+
+	h1 {
+		font-size: 4em;
+		line-height: 1.4em;
+	}
+
+	h2 {
+		font-size: 4em;
+		line-height: 1.2em;
+	}
+
+	h3 {
+		font-size: 2.6em;
+	}
+}

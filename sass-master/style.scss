@@ -1,8 +1,8 @@
 // Core Styles.
 @import "base/theme-header";    // Stylsheet header
-@import "utilities/variables";       // Define Variables
-@import "utilities/extensions";      // Define Variables
-@import "utilities/css-reset";       // Stylsheet Reset
+@import "utilities/css-reset";  // Stylsheet Reset
+@import "utilities/variables";  // Define Variables
+@import "utilities/extensions"; // Define Variables
 
 // General Styles.
 @import "base/accessibility";   // Special Styling for accessibility
@@ -14,6 +14,7 @@
 @import "base/typography";      // Typography
 
 // Section / Module Specific Styles.
-@import "modules/links";           // Link States
-@import "modules/form";            // Forms
-@import "modules/widgets";         // Widgets
+@import "modules/links";        // Link States
+@import "modules/form";         // Forms
+@import "modules/widgets";      // Widgets
+

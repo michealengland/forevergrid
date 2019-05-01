@@ -1,6 +1,6 @@
-const path              = require( 'path' ),
-			webpack           = require( 'webpack' ),
-			ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+const path = require( 'path' );
+const ebpack = require( 'webpack' );
+const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 
 // Set different CSS extraction for editor only and common block styles
 const blocksCSSPlugin = new ExtractTextPlugin( {

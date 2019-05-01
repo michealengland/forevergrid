@@ -1,14 +1,22 @@
-// Color Variables
-$color-1: #020041;  // Darkest Purple
-$color-2: #170387;  // Purple 2
-$color-3: #6626C9;  // Purple 3
-$color-4: #964AE2;  // Purple 4
-$color-5: #C074F1;  // Purple 5
-$color-6: #E2A1F9;  // Purple 6
-$color-7: #F6CCFE;  // Purple 7
-$color-8: #FEEDFE;  // lightest Purple
-$color-9: #FF1EE5;  // Bright Pink
-$color-10: #74EDF1; // Teal
+//ORIGINAL FOREVERGRID COLOR SCHEME
+// Original $color-1: #3fd5ae; // Teal - Pantone 3385
+
+// Light colors for use on dark colors.
+$color-1: #7de3c8; // Contrast on Dark
+$color-2: #5ce1ff; // Light Blue on Dark
+$color-3: #ffc2e3; // Pink
+$color-4: #333;
+$color-5: #222;
+$color-6: #333E48; // Dark Gray - Pantone 432
+
+// Dark colors for use on lighter colors.
+$l-color-1: #7de3c8; // Teal Variation
+$l-color-2: #0052A3; // Light Blue Variation
+$l-color-3: #A3005F; // Pink
+$l-color-4: #333;
+$l-color-5: #222;
+$l-color-6: #333E48; // Dark Gray - Pantone 432
+// END ORIGINAL COLOR SCHEME
 
 // Constant Colors
 $white: #ffffff;
@@ -17,11 +25,6 @@ $white-1: darken($white, 2%);
 $black: #000000;
 $dark-gray-1: #333333;  // Dark Gray
 $light-gray-1: #f5f5f5; // Light Gray
-
-$link-color-1: #0066cc;
-$link-color-2: #0099cc;
-$link-color-3: #ff9900;
-$link-color-4: #8e2ed2;
 
 //Font Styles
 $font-family-1: 'Muli', sans-serif;
@@ -36,14 +39,14 @@ $bold: 800;
 
 // Core Site Coloring
 $site_bg: $white;
-$site_header_bg: $color-1;
-$site_color: $color-1;
+$site_header_bg: $color-6;
+$site_color: lighten($color-6, 20%);
 
 // Secondary
 $secondary_bg: $white;
 
 // Footer
-$site_footer_bg: $color-1;         // Outer Container
+$site_footer_bg: $color-6;         // Outer Container
 $site_widget_area_bg: $color-1;    // widget_area
 $site_footer_credits_bg: $color-1; // Footer Credits @footer-info.php
 $site_footer_color: $white;        // Footer Color
@@ -54,18 +57,19 @@ $footer_widget_color: $white;      // Wiget Title Color
 
 $page_title_color: $color-4;       // Page Title Color
 
-// link Color Settings
+// Lighter colored link for use on dark colors.
 $light-link: $white;
 $light-link-hover: darken($white, 5%);
 $light-link-focus: darken($white, 5%);
 $light-link-active: darken($white, 5%);
 $light-link-visited: darken($white, 5%);
 
-// link Color Settings
-$dark-link: $color-1;
-$dark-link-hover: $color-2;
-$dark-link-focus: $color-2;
+// Darker colored link for use on light colors.
+$dark-link: $l-color-2;
+$dark-link-hover: $l-color-3;
+$dark-link-focus: $l-color-3;
 $dark-link-active: $color-3;
+$dark-link-visited: $color-3;
 
 // Max Widths
 $mw-1: 800px;
@@ -74,7 +78,7 @@ $mw-3: 90;
 
 // Light Icons
 $light-icon: $white;
-$light-icon-hover: $color-9;
+$light-icon-hover: $color-1;
 $light-icon-focus: darken($white, 5%);
 $light-icon-active: darken($white, 5%);
 
@@ -125,4 +129,4 @@ $mod-title-3: 3.8em;
 
 
 // Heading Height & Offset
-$fixed-header-height-1: 80px;
+$fixed-header-height-1: 68px;

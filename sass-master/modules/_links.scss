@@ -1,0 +1,95 @@
+a {
+	&:link {
+	color: $dark-link;
+	}
+
+	&:visited {
+	color: $dark-link-visited;
+	}
+
+	&:hover {
+	color: $dark-link-hover;
+	}
+
+	&:focus {
+	outline: 2px solid $dark-link-focus;
+	}
+}
+
+// Social Nav Menu
+.social-navigation {
+	font-size: 16px;
+	font-size: 1rem;
+
+	&.social-footer {
+		padding: .5em 0;
+	}
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: .5em;
+	}
+
+	a {
+		background-color: $site_footer_bg;
+		border-radius: 40px;
+		color: $light-icon;
+		display: inline-block;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		transition: .2s ease-in-out;
+		text-align: center;
+		width: 40px;
+
+		&:hover,
+		&:focus {
+			color: $color-6;
+			box-shadow: 0 0 0 2px $light-icon-hover;
+		}
+	}
+
+	.icon {
+		height: 16px;
+		top: 12px;
+		width: 16px;
+		vertical-align: top;
+	}
+}
+
+// Sidebar Social Nav Positioning
+.social-navigation.social-sidebar {
+	position: fixed;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+
+	&.right {
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&.left {
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	ul {
+		padding: 0;
+
+		li {
+			display: block;
+		}
+	}
+}

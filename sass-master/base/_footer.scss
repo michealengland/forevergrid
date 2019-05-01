@@ -1,0 +1,42 @@
+footer {
+	background-color: $site_footer_bg;
+	color: $site_footer_color;
+	position: relative;
+	width: 100%;
+
+	.widget-area {
+		padding: 1em 3em;
+
+		.widget-title {
+			color: $footer_widget_color;
+		}
+
+		a {
+			&:link {
+				color: $color-2;
+			}
+
+			&:visited {
+				color: lighten($color-2, 20%);
+			}
+
+			&:hover {
+				color: $color-3;
+			}
+
+			&:focus {
+				outline: 2px solid $color-3;
+			}
+		} // a
+	} // .widget-area
+
+	.credits {
+		text-align: center;
+		padding: $mod-gap-0;
+
+		.copyright {
+			padding: 0;
+			margin: 0;
+		}
+	}
+} // footer

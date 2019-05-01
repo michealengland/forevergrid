@@ -1,0 +1,103 @@
+body {
+	font-family: $font-family-1;
+}
+
+.page:not(.home) {
+	background-color: $color-1;
+}
+
+.customize-support .menu {
+	top: 32px;
+}
+
+//Inner Container Holds Sidebar
+#secondary {
+	background-color: $secondary_bg;
+	list-style: none;
+}
+
+// Footer
+footer {
+	color: $white-1;
+}
+
+// Mobile Styles
+@media ( min-width: 1em ) {
+
+	// Content Header.
+	.content-header {
+		padding: $pad-int-1 $global-spacing-1;
+
+		.content-title {
+			color: $page_title_color;
+			padding: 0;
+		}
+	}
+
+	// Content
+	.content-container {
+		display: block;
+		overflow: hidden;
+		position: relative;
+
+		&.has-fixed {
+			top: $fixed-header-height-1;
+		}
+
+		.site-main {
+			padding: 0 $global-spacing-1;
+		}
+	}
+
+	// Set sitewide font base.
+	body {
+		font-size: 18px;
+	}
+}
+
+
+
+@media ( min-width: 48em ) {
+	//Content Header
+	.content-header {
+		padding: $pad-int-1 0;
+	}
+
+	// Content
+	.content-container {
+
+		&.has-fixed {
+			top: $fixed-header-height-1;
+		}
+
+		.site-main {
+			padding: 0 $global-spacing-2;
+		}
+	} // .content-container
+
+	body {
+		font-size: 18px;
+	}
+}
+
+@media ( min-width: 60em ) {
+
+	// Content Grid
+	.content-container {
+
+		.site-main {
+			padding: 0 $global-spacing-3;
+		}
+	} // .content-container
+}
+
+@media ( min-width: 80em ) {
+
+	// Content Grid
+	.content-container {
+
+		.site-main {
+		padding: 0 $global-spacing-4;
+		}
+	} // .content-container
+}

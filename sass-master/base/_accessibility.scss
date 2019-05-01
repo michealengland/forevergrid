@@ -1,0 +1,42 @@
+// Skip link element after opening body tag.
+.skip-link {
+	background: $color-1;
+	color: $white;
+	border: 0;
+	color: $color-1;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	// On focus, display button.
+	&:focus {
+		background: $color-1;
+		color: $white;
+		clip: unset;
+		display: inline-block;
+		height: auto;
+		margin: 1em;
+		padding: 1em;
+		outline: 2px solid $color-2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-decoration: none;
+		width: auto;
+		z-index: 99;
+	}
+} // .skip-link
+
+// Hide Icon Text
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+} // .screen-reader-text
